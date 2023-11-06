@@ -1,0 +1,64 @@
+jdbc:mysql://localhost:3306/DbIhm?updateDatabase
+                           /DbIhm?createDatabaseIfNotExist=true
+
+http://localhost:8085/api/v1/employee/save
+{
+
+
+        "client_id":1,
+        "client_name":"user",
+        "prenom_client":"user2",
+        "email":"user@gmail.com",
+        "adresse":"adresse",
+        "photo":"f1.npg",
+        "tel":"2020202020",
+        "username":"username",
+        "password":"password_123",
+        "date_creation_compte":"08/05/2023",
+        "ville":"sfax"
+}
+
+http://localhost:8085/api/v1/employee/login
+{
+
+    "email":"user@gmail.com",
+    "password":"password_123"
+
+}
+
+
+POST http://localhost:8085/api/categories/save
+{
+
+"code_categorie":1,
+"nom_categorie":"femme"
+
+}
+
+
+
+------------------------------------------------------------
+
+
+post http://localhost:8085/api/commande/client/1/commandes
+
+
+
+{
+
+
+ "code_commande":5,
+
+  "date_commande":"08/05/2023",
+
+    "etat_commande":""
+}
+
+
+
+
+
+
+
+
+
